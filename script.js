@@ -2,6 +2,7 @@ const nav = document.querySelector('.nav');
 const container = document.querySelector('.container');
 const menuOpen = document.querySelector('.menu-toggle');
 const menuClose = document.querySelector('.menu-close');
+const panels = document.querySelectorAll('.panel');
 
 // Change nav on scroll
 window.addEventListener('scroll', fixNav);
@@ -21,4 +22,18 @@ menuOpen.addEventListener('click', () => {
 
 menuClose.addEventListener('click', () => {
   container.classList.remove('hamburger-active')
+})
+
+// Project panels
+function removeActiveClasses() {
+  panels.forEach(panel => {
+    panel.classList.remove('active')
+  })
+}
+
+panels.forEach(panel => {
+  panel.addEventListener('click', () => {
+    removeActiveClasses()
+    panel.classList.add('active')
+  })
 })

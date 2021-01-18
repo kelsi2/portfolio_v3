@@ -4,12 +4,20 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 body {
   font-family: 'Open Sans', sans-serif;
   color: #222;
   padding-bottom: 50px;
+  scroll-behavior: smooth;
+}
+
+br {
+  display: block;
+  content: '';
+  margin-top: 1rem;
 }
 
 .container {
@@ -24,6 +32,7 @@ body {
   left: 0;
   right: 0;
   transition: all .3s ease-in-out;
+  z-index: 2;
 }
 
 .nav .container {
@@ -113,8 +122,16 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
   z-index: -1;
+}
+
+.hero-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero h1 {
@@ -141,6 +158,102 @@ body {
   color: #555;
   line-height: 30px;
   letter-spacing: 1.2px;
+}
+
+.about-me {
+  display: flex;
+}
+
+.about-content{
+  width: 50%;
+} 
+
+.img-container {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+.img-container img {
+  box-shadow: -10px -10px 0 5px #D7015C, 10px 10px 0 5px #00BED1;
+  margin: 20px;
+}
+
+.project-container {
+    display: flex;
+    width: 90vw;
+    margin: auto;
+}
+
+.panel {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  transition: flex 0.7s ease-in;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.panel::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.panel h1 {
+  position: absolute;
+  font-size: 24px;
+  margin: 10px;
+  opacity: 0;
+  top: 20px;
+  left: 20px;
+  margin-bottom: 20px;
+}
+
+.panel p {
+  position: absolute;
+  top: 200px;
+  left: 20px;
+  margin: 10px;
+  opacity: 0;
+  color: #fff;
+  font-size: 18px;
+}
+
+.panel a {
+  color: #fff;
+  opacity: 0;
+}
+
+.project-links {
+  position: absolute;
+  top: 70px;
+  left: 20px;
+  font-size: 20px;
+  margin: 10px
+}
+
+.panel.active {
+  flex: 5;
+}
+
+.panel.active h1,
+.panel.active a,
+.panel.active p {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
 }
 
 @media (max-width: 430px) {
@@ -193,6 +306,10 @@ body {
     z-index: 1000;
   }
 
+  .container.hamburger-active {
+    height: 100vh;
+  }
+
   .nav .container.hamburger-active ul {
     left: 0;
     width: 100vw;
@@ -226,5 +343,29 @@ body {
   .menu-toggle:hover,
   .menu-toggle:focus {
     color: #02007F;
+  }
+
+  .about-me {
+    flex-wrap: wrap;
+  }
+
+  .about-content {
+    width: 100%;
+  }
+
+  .img-container {
+    width: 100%;
+  }
+
+  .project-container {
+    width: 100vw;
+  }
+
+  .panel.active {
+    flex: 5
+  }
+
+  .panel.active p {
+    display: none;
   }
 }
