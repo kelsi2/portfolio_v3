@@ -148,10 +148,11 @@ br {
   padding: 1rem;
 }
 
-.content h2,
-.content h3 {
-  font-size: 150%;
-  margin: 20px 0;
+.section-header {
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+  font-size: 2rem;
 }
 
 .content p {
@@ -172,6 +173,7 @@ br {
   display: flex;
   align-items: center;
   width: 50%;
+  padding: 1rem;
 }
 
 .img-container img {
@@ -189,7 +191,7 @@ br {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 80vh;
+  height: 70vh;
   border-radius: 50px;
   color: #fff;
   cursor: pointer;
@@ -208,7 +210,7 @@ br {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   z-index: -1;
 }
 
@@ -254,6 +256,24 @@ br {
 .panel.active p {
   opacity: 1;
   transition: opacity 0.3s ease-in 0.4s;
+}
+
+.education {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 70vh;
+  border-radius: 50px;
+  color: #fff;
+  margin: 10px;
+  z-index: 1;
+}
+
+.education h3 {
+  color: #000;
+  margin-left: 50px;
+  margin-top: 20px;
+  padding-bottom: 1rem;
 }
 
 @media (max-width: 430px) {
@@ -367,5 +387,9 @@ br {
 
   .panel.active p {
     display: none;
+  }
+  
+  .education h3 {
+    font-size: 90%;
   }
 }
