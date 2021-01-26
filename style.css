@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open_Sans');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:400&display=swap');
 
 * {
   box-sizing: border-box;
@@ -153,18 +154,26 @@ br {
 }
 
 .section-header {
-  width: 100%;
-  padding: 2rem;
-  text-align: center;
-  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
+  font-size: 3em;
+  color: #0C3861;
+  padding-top: 0.2em;
+}
+
+.rule {
+  width: 75%;
+  margin: auto;
+  margin-bottom: 1em;
+  margin-top: 1.5em
 }
 
 .content p {
-  color: #555;
   line-height: 40px;
   letter-spacing: 1.2px;
   font-size: 1.2rem;
-  width: 75%;
 }
 
 .about-me {
@@ -178,7 +187,12 @@ br {
   flex: 50%;
   justify-content: center;
   align-items: center;
+  color: #555;
 } 
+
+.about-text {
+  width: 75%;
+}
 
 .img-container {
   display: flex;
@@ -270,25 +284,103 @@ br {
   transition: opacity 0.3s ease-in 0.4s;
 }
 
-.education {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 70vh;
-  border-radius: 50px;
+.testimonial-container {
+  background-color: #476ce4;
   color: #fff;
-  margin: 10px;
-  z-index: 1;
+  border-radius: 15px;
+  margin: 20px auto;
+  padding: 50px 80px;
+  width: 70%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
 }
 
-.education h3 {
-  color: #000;
-  margin-left: 50px;
-  margin-top: 20px;
-  padding-bottom: 1rem;
+.fa-quote {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 28px;
+  position: absolute;
+  top: 70px;
 }
 
-@media (max-width: 430px) {
+.fa-quote-right {
+  right: 40px;
+}
+
+.fa-quote-left {
+  left: 40px;
+}
+
+.slide-btn {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 48px;
+  position: absolute;
+  top: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.slide-btn:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.slide-btn:focus {
+  outline: 0;
+}
+
+.slide-btn:active {
+  transform: scale(0.98);
+}
+
+.fa-angle-right {
+  right: 20px;
+}
+
+.fa-angle-left {
+  left: 20px;
+}
+
+.testimonial {
+  flex: 75%;
+  line-height: 15px;
+  color: #fff;
+  padding-right: 0.5rem;
+  width: 70%;
+  margin: auto;
+}
+
+.user {
+  flex: 25%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.user .user-image {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+}
+
+.user .user-details {
+  margin-left: 10px;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.user .username {
+  margin: 0;
+}
+
+.user .role {
+  font-weight: normal;
+  margin: 10px 0;
+}
+
+@media (max-width: 768px) {
   .nav .container:only-of-type ul {
     position: absolute;
     display: none;
@@ -401,7 +493,11 @@ br {
     display: none;
   }
   
-  .education h3 {
-    font-size: 90%;
+  .testimonial-container {
+    padding: 20px 30px;
+  }
+
+  .fa-quote {
+    display: none;
   }
 }
