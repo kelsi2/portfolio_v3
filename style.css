@@ -105,7 +105,7 @@ br {
 }
 
 .hero {
-  background-image: url('./docs/background.jpg');
+  background-image: url('./docs/background.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
