@@ -290,12 +290,13 @@ br {
   background-color: #476ce4;
   color: #fff;
   border-radius: 15px;
-  margin: 20px auto;
-  padding: 50px 80px;
-  width: 70%;
+  margin: 10px auto;
+  padding: 50px 50px;
+  width: 90%;
   position: relative;
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 .fa-quote {
@@ -303,6 +304,7 @@ br {
   font-size: 28px;
   position: absolute;
   top: 70px;
+  padding: 0;
 }
 
 .fa-quote-right {
@@ -344,11 +346,12 @@ br {
 }
 
 .testimonial {
-  flex: 75%;
+  flex: 65%;
   line-height: 15px;
   color: #fff;
   padding-right: 0.5rem;
-  width: 70%;
+  padding-left: 0.7rem;
+  width: 50%;
   margin: auto;
 }
 
@@ -362,8 +365,8 @@ br {
 
 .user .user-image {
   border-radius: 50%;
-  height: 150px;
-  width: 150px;
+  height: auto;
+  max-width: 100%;
   object-fit: cover;
 }
 
@@ -533,42 +536,37 @@ br {
     padding: 0;
     margin: auto;
     font-size: 1rem;
-    line-height: 25px;
+    line-height: 2rem;
     padding-top: 1rem;
+    order: 1;
   }
 
   .user {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     width: 100%;
+    order: 2;
   }
 
   .user .user-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    flex: 50%;
-    margin-right: 1rem;
+    max-width: 30%;
+    height: auto;
+    margin: 1rem;
   }
   
   .user .user-details {
     margin: 0;
     font-size: 0.8rem;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    flex: 50%;
   }
   
   .user .role {
     margin: 0;
     font-size: 0.8rem;
     line-height: 15px;
-    text-align: center;
     padding-top: 0.5rem;
   }
 }

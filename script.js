@@ -55,6 +55,11 @@ const testimonials = [
   }
 ];
 
+if (testimonials.length <= 1) {
+  rightBtn.style.visibility = 'hidden';
+  leftBtn.style.visibility = 'hidden';
+}
+
 let idx = 0;
 
 let interval = setInterval(run, 10000);
