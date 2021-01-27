@@ -34,6 +34,7 @@ br {
   right: 0;
   transition: all .3s ease-in-out;
   z-index: 2;
+  overflow: hidden;
 }
 
 .nav .container {
@@ -296,7 +297,6 @@ br {
   position: relative;
   display: flex;
   justify-content: space-between;
-  overflow: hidden;
 }
 
 .fa-quote {
@@ -383,6 +383,41 @@ br {
 .user .role {
   font-weight: normal;
   margin: 10px 0;
+}
+
+.education-container {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  margin: auto;
+}
+
+.education-box {
+  margin: 1rem;
+  background-color: #FF6F7D;
+  color: #fff;
+  padding: 1rem;
+  padding-top: 5rem;
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  width: 30%;
+}
+
+.education-box h3 {
+  padding-bottom: 1.2rem;
+}
+
+.education-img {
+  font-size: 2rem;
+  top: 0;
+  left: 20px;
+  position: absolute;
+  padding: 1rem;
+  background-color: #00B8B5;
+  color: #fff;
+  border-radius: 5px;
 }
 
 @media (max-width: 768px) {
@@ -551,7 +586,7 @@ br {
   }
 
   .user .user-image {
-    max-width: 30%;
+    max-width: 20%;
     height: auto;
     margin: 1rem;
   }
@@ -568,5 +603,20 @@ br {
     font-size: 0.8rem;
     line-height: 15px;
     padding-top: 0.5rem;
+  }
+
+  .education-container {
+    flex-wrap: wrap;
+  }
+
+  .education-box {
+    width: 80%;
+    padding-top: 1rem;
+    font-size: 90%;
+  }
+
+  .education-img {
+    font-size: 1.5rem;
+    padding: 0.5rem;
   }
 }
