@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="docs/favicon.ico">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
   <link rel="stylesheet" href="style.css">
   <title>Kelsi Proulx - Web Developer</title>
@@ -20,7 +21,7 @@
         <span class="sr-only">Open main menu</span>
         <span class="fa fa-bars" aria-hidden="true"></span>
       </button>
-        <h1 class="logo"><a href="/index.html">My Website</a></h1>
+      <a href="/index.html"><img src="docs/logo.webp" class="logo"></a>
         <ul>
           <li><a href="#" class="current">Home</a></li>
           <li><a href="#">About</a></li>
@@ -51,6 +52,7 @@
     <section class="about-me">
       <div class="about-content">
         <p class="about-text"><b>WHO I AM: </b>I am a fullstack web developer with a passion for frontend development. I love to work on projects that give me a chance to express my creativity. This passion goes hand in hand with my strong passion for learning and constant improvement. Due to a background in library work, I have advanced research skills which have aided me in finding the answers to tricky development problems.</p>
+        <a target="_blank" rel="noopener" href="https://www.canva.com/design/DAEJnLHujCI/wV0L8kC5n7qxN7V9iabLyw/view?utm_content=DAEJnLHujCI&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" class="resume-link">Printable Resume</a>
       </div>
       
       <div class="img-container">
@@ -165,24 +167,62 @@
       </div>
     </section>
 
+    <section class="skills">
+      <h3 class="section-header">Skills</h3>
+      <hr class="rule">
+      <div class="skills-container">
+        <div class="skills-box">
+          <i class="fas fa-palette skills-img"></i>
+          <h2>Front End</h2>
+          <ul class="front-end-skills">
+            <li class="skill"><i class="fab fa-html5"></i> HTML</li>
+            <li class="skill"><i class="fab fa-css3-alt"></i> CSS</li>
+            <li class="skill"><i class="fab fa-js-square"></i> JavaScript</li>
+            <li class="skill"><i class="fas fa-code"></i> TypeScript</li>
+            <li class="skill"><i class="fab fa-react"></i> React</li>
+            <li class="skill"><i class="fas fa-gem"></i> Ruby</li>
+          </ul>
+        </div>
+        <div class="skills-box">
+          <i class="fas fa-palette skills-img"></i>
+          <h2>Back End</h2>
+          <ul>
+            <li class="skill"><i class="fab fa-node-js"></i> Node.JS</li>
+            <li class="skill"><i class="fas fa-database"></i> PostgreSQL</li>
+            <li class="skill"><i class="fas fa-code"></i>Ruby on Rails</li>
+          </ul>
+        </div>
+
+        <div class="skills-box">
+          <i class="fas fa-palette skills-img"></i>
+          <h2>Miscellaneous Skills</h2>
+          <ul>
+            <li class="skill"><i class="fab fa-wordpress"></i> WordPress</li>
+            <li class="skill"><i class="fab fa-npm"></i> NPM</li>
+            <li class="skill"><i class="fas fa-pencil-ruler"></i> Adobe InDesign</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
     <section class="education">
       <h3 class="section-header">Education</h3>
       <hr class="rule">
-      <div class="education-container">
-        <div class="education-box">
-          <i class="fas fa-file-code education-img"></i>
+      <div class="skills-container">
+        <div class="skills-box education-box">
+          <i class="fas fa-file-code skills-img education-img"></i>
           <h3>Web Development Diploma</h3>
           <h4>Lighthouse Labs</h4>
           <h5>August - November 2020</h5>
         </div>
-        <div class="education-box">
-          <i class="fas fa-book-reader education-img"></i>
+        <div class="skills-box education-box">
+          <i class="fas fa-book-reader skills-img education-img"></i>
           <h3>Library and Information Technology Diploma</h3>
           <h4>Langara College</h4>
           <h5>September 2014 - April 2016</h5>
         </div>
-        <div class="education-box">
-          <i class="fas fa-graduation-cap education-img"></i>
+        <div class="skills-box education-box">
+          <i class="fas fa-graduation-cap skills-img education-img"></i>
           <h3>Bachelor of Arts</h3>
           <h4>University of British Columbia</h4>
           <h5>September 2007 - April 2012</h5>
@@ -193,6 +233,26 @@
     <section class="experience">
       <h3 class="section-header">Experience</h3>
       <hr class="rule">
+      <div class="skills-container">
+        <div class="skills-box experience-box">
+          <i class="fas fa-university skills-img experience-img"></i>
+          <h3>Program Assistant</h3>
+          <h4>University of British Columbia</h4>
+          <h5>June 2019 - April 2020</h5>
+        </div>
+        <div class="skills-box experience-box">
+          <i class="fas fa-book skills-img experience-img"></i>
+          <h3>Library Clerk II</h3>
+          <h4>Burnaby Public Library</h4>
+          <h5>October 2016 - June 2019</h5>
+        </div>
+        <div class="skills-box experience-box">
+          <i class="fas fa-briefcase skills-img experience-img"></i>
+          <h3>Public Services Library Technician</h3>
+          <h4>Douglas College</h4>
+          <h5>May 2016 - June 2010</h5>
+        </div>
+      </div>
     </section>
   </section>
 

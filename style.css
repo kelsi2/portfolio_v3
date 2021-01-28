@@ -23,7 +23,7 @@ br {
 
 .container {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .nav {
@@ -41,7 +41,7 @@ br {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  margin: auto;
   transition: all .3s ease-in-out;
   overflow: hidden;
 }
@@ -79,14 +79,21 @@ br {
   font-weight: bold;
 }
 
-.nav.active .container {
-  padding: 10px;
+.nav.active .logo {
+  height: 30%;
+  width: 30%;
 }
 
 .nav a.current,
 .nav a:hover {
   color: #02007F;
   font-weight: bold;
+}
+
+.logo {
+  height: 50%;
+  width: 50%;
+  padding-left: 1rem;
 }
 
 .menu-close,
@@ -188,11 +195,30 @@ br {
   flex: 50%;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   color: #555;
 } 
 
 .about-text {
   width: 75%;
+}
+
+.resume-link {
+  cursor: pointer;
+  padding: 1.7rem;
+  background-color: #D7015C;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  text-decoration: none;
+}
+
+.resume-link:hover {
+  transform: scale(0.98);
+  font-weight: bold;
+  background-color: #00BED1;
+  color: #02007F;
 }
 
 .img-container {
@@ -366,7 +392,7 @@ br {
 .user .user-image {
   border-radius: 50%;
   height: auto;
-  max-width: 100%;
+  max-width: 70%;
   object-fit: cover;
 }
 
@@ -385,14 +411,14 @@ br {
   margin: 10px 0;
 }
 
-.education-container {
+.skills-container {
   display: flex;
   justify-content: space-around;
   width: 90%;
   margin: auto;
 }
 
-.education-box {
+.skills-box {
   margin: 1rem;
   background-color: #FF6F7D;
   color: #fff;
@@ -405,11 +431,13 @@ br {
   width: 30%;
 }
 
-.education-box h3 {
+.skills-box h3,
+.skills-box h2 {
   padding-bottom: 1.2rem;
+  font-weight: bold;
 }
 
-.education-img {
+.skills-img {
   font-size: 2rem;
   top: 0;
   left: 20px;
@@ -418,6 +446,31 @@ br {
   background-color: #00B8B5;
   color: #fff;
   border-radius: 5px;
+}
+
+.education-box {
+  background-color: #1FC198;
+}
+
+.education-img {
+  background-color: #0035A1;
+}
+
+.experience-box {
+  background-color: #A148E2;
+}
+
+.experience-img {
+  background-color: #476CE4;
+}
+
+.skill {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+
+.front-end-skills {
+  columns: 2;
 }
 
 @media (max-width: 768px) {
@@ -605,17 +658,17 @@ br {
     padding-top: 0.5rem;
   }
 
-  .education-container {
+  .skills-container {
     flex-wrap: wrap;
   }
 
-  .education-box {
+  .skills-box {
     width: 80%;
     padding-top: 1rem;
     font-size: 90%;
   }
 
-  .education-img {
+  .skills-img {
     font-size: 1.5rem;
     padding: 0.5rem;
   }
