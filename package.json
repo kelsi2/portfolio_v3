@@ -2,7 +2,7 @@
   "name": "portfolio_v3",
   "version": "1.0.0",
   "description": "",
-  "main": "script.js",
+  "main": "index.html",
   "directories": {
     "doc": "docs"
   },
@@ -21,7 +21,11 @@
   },
   "homepage": "https://github.com/kelsi2/portfolio_v3#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^8.2.0",
-    "nodemailer": "^6.4.17"
+    "express": "^4.17.1",
+    "multiparty": "^4.2.2",
+    "nodemailer": "^6.4.17",
+    "request": "^2.88.2"
   }
 }

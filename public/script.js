@@ -10,6 +10,7 @@ const username = document.querySelector('.username');
 const role = document.querySelector('.role');
 const leftBtn = document.getElementById('left');
 const rightBtn = document.getElementById('right');
+const form = document.getElementById('contact-form');
 
 // Change nav on scroll
 window.addEventListener('scroll', fixNav);
@@ -105,3 +106,25 @@ leftBtn.addEventListener('click', () => {
   updateTestimonial();
   resetInterval();
 })
+
+// Contact form
+
+const formEvent = form.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  let mail = new FormData(form);
+
+  sendMail(mail);
+});
+console.log(formEvent)
+// console.log(mail)
+
+const sendMail = (formEvent) => {
+  const baseURL = 'http://localhost:5000' || 'https://kelsidev.net';
+  fetch(`${baseURL}/send`, {
+    method: 'post',
+    body: formEvent,
+  }).then((res) => {
+    return res.json();
+  })
+}

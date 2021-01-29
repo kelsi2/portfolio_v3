@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="docs/favicon.ico">
+  <link type="text/css" rel="stylesheet" href="/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-  <link rel="stylesheet" href="style.css">
   <title>Kelsi Proulx - Web Developer</title>
 </head>
 
@@ -50,7 +50,7 @@
   </div>
 
   <section class="content">
-    <h2 class="section-header">About Me</h2>
+    <h2 id="about" class="section-header">About Me</h2>
     <hr class="rule">
     <section class="about-me">
       <div class="about-content">
@@ -64,7 +64,7 @@
     </section>
 
     <section class="projects">
-      <h3 class="section-header">Projects</h3>
+      <h3 id="projects" class="section-header">Projects</h3>
       <hr class="rule">
       <div class="project-container">
         <div class="panel active"
@@ -150,7 +150,7 @@
     </section>
 
     <section class="testimonials">
-      <h3 class="section-header">Testimonials</h3>
+      <h3 id="testimonials" class="section-header">Testimonials</h3>
       <hr class="rule">
       <div class="testimonial-container">
         <div class="fas fa-quote-right fa-quote"></div>
@@ -171,7 +171,7 @@
     </section>
 
     <section class="skills">
-      <h3 class="section-header">Skills</h3>
+      <h3 id="skills" class="section-header">Skills</h3>
       <hr class="rule">
       <div class="skills-container">
         <div class="skills-box">
@@ -209,7 +209,7 @@
     </section>
 
     <section class="education">
-      <h3 class="section-header">Education</h3>
+      <h3 id="education" class="section-header">Education</h3>
       <hr class="rule">
       <div class="skills-container">
         <div class="skills-box education-box">
@@ -234,7 +234,7 @@
     </section>
 
     <section class="experience">
-      <h3 class="section-header">Experience</h3>
+      <h3 id="experience" class="section-header">Experience</h3>
       <hr class="rule">
       <div class="skills-container">
         <div class="skills-box experience-box">
@@ -259,7 +259,7 @@
     </section>
 
     <section class="contact">
-      <h3 class="section-header">Contact Me</h3>
+      <h3 id="contact" class="section-header">Contact Me</h3>
       <hr class="rule">
       <form
         id="contact-form"
@@ -269,7 +269,7 @@
       >
         <div class="form-group">
           <div class="row">
-            <div class="col-md-6">
+            <div>
               <input
                 placeholder="Name"
                 id="name"
@@ -279,7 +279,7 @@
                 required
               />
             </div>
-            <div class="col-md-6">
+            <div>
               <input
                 placeholder="Email"
                 id="email"
@@ -319,6 +319,7 @@
     </section>
   </section>
 
+  <script src="server.js"></script>
   <script src="script.js"></script>
 </body>
 
