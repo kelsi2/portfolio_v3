@@ -21,12 +21,15 @@
         <span class="sr-only">Open main menu</span>
         <span class="fa fa-bars" aria-hidden="true"></span>
       </button>
-      <a href="/index.html"><img src="docs/logo.webp" class="logo"></a>
+      <a href="#"><img src="docs/logo.webp" class="logo"></a>
         <ul>
-          <li><a href="#" class="current">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
         <button
         id="main-menu-close"
@@ -253,6 +256,66 @@
           <h5>May 2016 - June 2010</h5>
         </div>
       </div>
+    </section>
+
+    <section class="contact">
+      <h3 class="section-header">Contact Me</h3>
+      <hr class="rule">
+      <form
+        id="contact-form"
+        method="POST"
+        action="send"
+        enctype="multipart/form-data"
+      >
+        <div class="form-group">
+          <div class="row">
+            <div class="col-md-6">
+              <input
+                placeholder="Name"
+                id="name"
+                name="name"
+                type="text"
+                class="form-control"
+                required
+              />
+            </div>
+            <div class="col-md-6">
+              <input
+                placeholder="Email"
+                id="email"
+                type="email"
+                name="email"
+                class="form-control"
+                aria-describedby="emailHelp"
+                required
+              />
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <input
+            placeholder="Subject"
+            id="subject"
+            name="subject"
+            type="text"
+            class="form-control"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <textarea
+            placeholder="Message"
+            id="message"
+            name="message"
+            class="form-control"
+            rows="3"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" value="submit" class="btn btn-primary">
+          Submit
+        </button>
+      </form>
     </section>
   </section>
 
