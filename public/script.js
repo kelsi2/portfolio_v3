@@ -116,8 +116,6 @@ const formEvent = form.addEventListener('submit', (e) => {
 
   sendMail(mail);
 });
-console.log(formEvent)
-// console.log(mail)
 
 const sendMail = (formEvent) => {
   const baseURL = 'http://localhost:5000' || 'https://kelsidev.net';

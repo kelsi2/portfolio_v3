@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="docs/favicon.ico">
-  <link type="text/css" rel="stylesheet" href="/style.css">
+  <link type="text/css" rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
   <title>Kelsi Proulx - Web Developer</title>
 </head>
@@ -261,63 +261,79 @@
     <section class="contact">
       <h3 id="contact" class="section-header">Contact Me</h3>
       <hr class="rule">
-      <form
+      <div class="form-container">
+        <form
+        class="contact-form"
         id="contact-form"
         method="POST"
         action="send"
         enctype="multipart/form-data"
-      >
+        >
         <div class="form-group">
-          <div class="row">
-            <div>
-              <input
-                placeholder="Name"
-                id="name"
-                name="name"
-                type="text"
-                class="form-control"
-                required
-              />
-            </div>
-            <div>
-              <input
-                placeholder="Email"
-                id="email"
-                type="email"
-                name="email"
-                class="form-control"
-                aria-describedby="emailHelp"
-                required
-              />
-            </div>
-          </div>
-        </div>
-        <div class="form-group">
-          <input
-            placeholder="Subject"
-            id="subject"
-            name="subject"
+          <div class="form-field">
+            <label for="name">Name: </label>
+            <input
+            placeholder="First name, Last name"
+            id="name"
+            name="name"
             type="text"
             class="form-control"
             required
-          />
+            />
+          </div>
         </div>
         <div class="form-group">
-          <textarea
-            placeholder="Message"
-            id="message"
-            name="message"
+          <div class="form-field">
+            <label for="email">Email: </label>
+            <input
+            placeholder="example@example.com"
+            id="email"
+            type="email"
+            name="email"
             class="form-control"
-            rows="3"
+            aria-describedby="emailHelp"
             required
+            />
+          </div>
+        </div>
+      <div class="form-group">
+        <div class="form-field">
+          <label for="subject">Subject: </label>
+          <input
+          placeholder="Message subject"
+          id="subject"
+          name="subject"
+          type="text"
+          class="form-control"
+          required
+          />
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="form-field">
+          <label for="message">Message: </label>
+          <textarea
+          placeholder="Enter your message..."
+          id="message"
+          name="message"
+          class="form-control"
+          required
           ></textarea>
         </div>
-        <button type="submit" value="submit" class="btn btn-primary">
-          Submit
-        </button>
+      </div>
+      <button type="submit" value="submit" class="btn">
+        Submit
+      </button>
       </form>
-    </section>
+      <div class="social-icons">
+        <a class="social-icon" href="https://www.linkedin.com/in/kelsi-dev/"><i class="fab fa-linkedin-in"></i></a>
+        <a class="social-icon" href="https://github.com/kelsi2"><i class="fab fa-github"></i></a>
+        <a class="social-icon" href="https://twitter.com/KelsiProulx"><i class="fab fa-twitter"></i></a>
+      </div>
+      <span class="copyright">©2021 Kelsi Proulx</span>
+    </div>
   </section>
+</section>
 
   <script src="server.js"></script>
   <script src="script.js"></script>

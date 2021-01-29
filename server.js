@@ -7,6 +7,7 @@ const multiparty = require("multiparty");
 
 const app = express();
 
+// Allow cors requests to send mail
 app.use((request, response, next) => {
   response.header("Access-Control-Allow-Origin", "*");
   response.header("Access-Control-Allow-Headers", "Content-Type");
