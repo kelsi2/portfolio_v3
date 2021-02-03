@@ -2,7 +2,7 @@ const nav = document.querySelector('.nav');
 const container = document.querySelector('.container');
 const menuOpen = document.querySelector('.menu-toggle');
 const menuClose = document.querySelector('.menu-close');
-const panels = document.querySelectorAll('.panel');
+const projects = document.querySelectorAll('.project');
 const testimonialContainer = document.querySelector('.testimonial-container');
 const testimonial = document.querySelector('.testimonial');
 const userImage = document.querySelector('.user-image');
@@ -32,19 +32,24 @@ menuClose.addEventListener('click', () => {
   container.classList.remove('hamburger-active')
 })
 
-// Project panels
-function removeActiveClasses() {
-  panels.forEach(panel => {
-    panel.classList.remove('active')
+// Projects
+window.addEventListener('scroll', revealProjects);
+
+revealProjects();
+
+function revealProjects() {
+  const triggerBottom = window.innerHeight / 5 * 4;
+
+  projects.forEach(project => {
+    const projectTop = project.getBoundingClientRect().top;
+
+    if (projectTop < triggerBottom) {
+      project.classList.add('show');
+    } else {
+      project.classList.remove('show');
+    }
   })
 }
-
-panels.forEach(panel => {
-  panel.addEventListener('click', () => {
-    removeActiveClasses()
-    panel.classList.add('active')
-  })
-})
 
 // Testimonial container
 const testimonials = [
