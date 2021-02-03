@@ -587,8 +587,7 @@ br {
 }
 
 .copyright {
-  margin-top: 1em;
-  padding-bottom: 0;
+  margin: 1em;
   display: flex;
   align-items: center;
   justify-content: center;

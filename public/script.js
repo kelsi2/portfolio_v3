@@ -127,7 +127,19 @@ const sendMail = (formEvent) => {
   fetch(`${baseURL}/send`, {
     method: 'post',
     body: formEvent,
-  }).then((res) => {
-    return res.json();
+  }).then((res, err) => {
+    if (err) {
+      ToastMaker('That didn\'t work, please try again', 5000, {
+        styles: { backgroundColor: 'red', padding: '1.5rem' },
+        align: 'right',
+        valign: 'top'
+      })
+    } else {
+      ToastMaker('Message sent successfully!', 5000, {
+          styles: { backgroundColor: 'green', padding: '1.5rem' },
+          align: 'right',
+          valign: 'top'
+        })
+    }
   })
 }
