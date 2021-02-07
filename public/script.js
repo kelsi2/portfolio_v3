@@ -10,8 +10,6 @@ const username = document.querySelector('.username');
 const role = document.querySelector('.role');
 const leftBtn = document.getElementById('left');
 const rightBtn = document.getElementById('right');
-const form = document.getElementById('contact-form');
-const spinner = document.getElementById('spinner');
 
 // Change nav on scroll
 window.addEventListener('scroll', fixNav);
@@ -112,39 +110,3 @@ leftBtn.addEventListener('click', () => {
   updateTestimonial();
   resetInterval();
 })
-
-// Contact form
-
-const formEvent = form.addEventListener('submit', (e) => {
-  e.preventDefault();
-
-  spinner.classList.add('show');
-
-  let mail = new FormData(form);
-
-  sendMail(mail);
-});
-
-const sendMail = (formEvent) => {
-  const baseURL = 'http://localhost:5000' || 'https://kelsidev.net' || 'https://thawing-bayou-33693.herokuapp.com';
-  fetch(`${baseURL}/send`, {
-    method: 'post',
-    body: formEvent,
-  }).then((res, err) => {
-    if (err) {
-      spinner.classList.remove('show');
-      ToastMaker('That didn\'t work, please try again', 5000, {
-        styles: { backgroundColor: 'red', padding: '1.5rem' },
-        align: 'right',
-        valign: 'top'
-      })
-    } else {
-      spinner.classList.remove('show');
-      ToastMaker('Message sent successfully!', 5000, {
-          styles: { backgroundColor: 'green', padding: '1.5rem' },
-          align: 'right',
-          valign: 'top'
-        })
-    }
-  })
-}

@@ -20,14 +20,5 @@
     "url": "https://github.com/kelsi2/portfolio_v3/issues"
   },
   "homepage": "https://github.com/kelsi2/portfolio_v3#readme",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "multiparty": "^4.2.2",
-    "nodemailer": "^6.4.17",
-    "promise-status-async": "^1.1.11",
-    "request": "^2.88.2",
-    "toastmaker": "^1.0.9"
-  }
+  "dependencies": {}
 }

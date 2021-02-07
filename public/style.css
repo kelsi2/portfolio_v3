@@ -676,7 +676,7 @@ br {
     padding: .75em 15px;
     line-height: 1em;
     font-size: 1em;
-    color: #fff;
+    color: var(--main-color);
     right: 0;
     top: 10px;
     position: absolute;
