@@ -32,7 +32,7 @@ br {
 
 .nav {
   position: fixed;
-  background-color: #000;
+  background-color: rgb(130, 189, 216);
   top: 0;
   left: 0;
   right: 0;
@@ -260,9 +260,9 @@ br {
 
 .project {
   width: 90%;
-  margin: auto;
   display: flex;
   justify-content: space-between;
+  margin: auto;
   margin-bottom: 2rem;
   padding: 5rem 0 5rem 0;
   transform: translateX(400%);
@@ -400,6 +400,7 @@ br {
 .testimonial {
   flex: 65%;
   line-height: 15px;
+  font-style: italic;
   color: #fff;
   padding-right: 0.5rem;
   padding-left: 0.7rem;
@@ -578,21 +579,6 @@ br {
   transform: scale(0.98);
 }
 
-.spinner {
-  border: 10px solid #f3f3f3;
-  border-top: 10px solid #3498db;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  animation: spin 2s linear infinite;
-  display: none;
-  margin: 1em;
-}
-
-.spinner.show {
-  display: inline-block;
-}
-
 .social-icons {
   margin-left: 7em;
   display: flex;
@@ -621,16 +607,6 @@ br {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-@-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
 }
 
 @media (max-width: 768px) {
@@ -722,8 +698,14 @@ br {
     color: #02007F;
   }
 
+  .logo {
+    height: 30%;
+    width: 30%;
+  }
+
   .section-header {
     font-size: 2rem;
+    margin-top: 1rem;
   }
 
   .about-me {
@@ -746,44 +728,49 @@ br {
     width: 100vw;
   }
 
-  .panel.active {
-    flex: 2
+  .project {
+    flex-direction: column;
+    padding: 0.5rem;
+    transform: translateX(0);
   }
 
-  .panel.active h1 {
-    font-size: 14px
+  .project:nth-of-type(even) {
+    transform: translateX(0);
   }
 
-  .panel.active a {
-    font-size: 14px;
+  .project-image {
+    width: 98%;
   }
 
-  .panel.active p {
-    display: none;
+  .project-info {
+    width: 98%;
+    line-height: normal;
   }
 
-  .panel:nth-of-type(4),
-  .panel:nth-of-type(5),
-  .panel:nth-of-type(6),
-  .panel:nth-of-type(7) {
-    display: none
+  .project-info h3 {
+    margin: 0
+  }
+
+  .project-info a {
+    padding: 0.25rem 0.5rem;
+    font-size: 80%;
   }
   
   .testimonial-container {
-    padding: 20px 30px;
+    padding: 1rem;
     flex-direction: column;
-    width: 100%;
+    width: 98%;
   }
 
   .fa-quote {
-    display: none;
+    visibility: hidden;
   }
 
   .testimonial-container .testimonial {
-    width: 85%;
+    width: 95%;
     padding: 0;
     margin: auto;
-    font-size: 1rem;
+    font-size: 0.9rem;
     line-height: 2rem;
     padding-top: 1rem;
     order: 1;
@@ -823,13 +810,39 @@ br {
   }
 
   .skills-box {
-    width: 80%;
-    padding-top: 1rem;
+    width: 98%;
+    margin: 1.5rem 0;
+    padding-top: 2.5rem;
     font-size: 90%;
   }
 
   .skills-img {
     font-size: 1.5rem;
     padding: 0.5rem;
+  }
+
+  .form-container {
+    padding: 0;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 60%;
+  }
+
+  .btn {
+    width: 90%;
+    margin: auto;
+  }
+
+  .social-icons {
+    margin: auto;
   }
 }
