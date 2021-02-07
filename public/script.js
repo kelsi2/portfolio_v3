@@ -126,7 +126,7 @@ const formEvent = form.addEventListener('submit', (e) => {
 });
 
 const sendMail = (formEvent) => {
-  const baseURL = 'http://localhost:5000' || 'https://kelsidev.net';
+  const baseURL = 'http://localhost:5000' || 'https://kelsidev.net' || 'https://thawing-bayou-33693.herokuapp.com';
   fetch(`${baseURL}/send`, {
     method: 'post',
     body: formEvent,
