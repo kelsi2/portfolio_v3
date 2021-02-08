@@ -268,8 +268,8 @@ br {
 .project-image img {
   box-sizing: border-box;
   position: absolute;
-  height: 100%;
-  width: auto;
+  height: auto;
+  width: 100%;
 }
 
 .project-info {
@@ -293,17 +293,16 @@ br {
   font-weight: bold;
 }
 
-
 .project-links {
   padding: 1rem;
   flex-direction: row;
 }
 
 .project-info a {
-  margin: 0.5rem;
   border: 5px solid #000;
   color: #000;
-  padding: 0.25rem 1rem 0.25rem 1rem;
+  padding: 0.2rem 0.4rem;
+  font-size: 1.2rem;
   text-decoration: none;
   display: inline-block;
 }
@@ -607,14 +606,17 @@ br {
       background: #D7015C;
   }
 
-  .container a {
+  .container a:only-of-type ul {
     display: block;
     padding: .75em 15px;
     line-height: 1em;
     font-size: 1em;
-    color: #fff;
     text-decoration: none;
     border-bottom: 1px solid #383838;
+  }
+  
+  .container a {
+    color: #fff;
   }
 
   .menu-toggle, .menu-close {
@@ -689,16 +691,13 @@ br {
     transform: translateX(0);
   }
 
-  .project-image {
-    width: 98%;
-  }
-
   .project-info {
     width: 98%;
     line-height: normal;
   }
 
   .project-info h3 {
+    font-size: 80%;
     margin: 0
   }
 
@@ -707,120 +706,124 @@ br {
     font-size: 80%;
   }
 
+  .skills-container {
+    flex-wrap: wrap;
+  }
+
+  .skills-box:first-of-type {
+    width: 60%;
+  }
+
+  .skills-box {
+    width: 40%;
+  }
+
   .form-group {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     width: 100%;
   }
-}
 
-@media (min-width: 769px) and (max-width: 992px) {
-  .skills-container {
-    flex-wrap: wrap;
-  }
-
-  .skills-box {
-    width: 40%;
-  }
-}
-
-@media (max-width: 768px) {
-  .about-me {
-    flex-wrap: wrap;
-  }
-
-  .about-me .about-text {
-    line-height: 25px;
-  }
-
-  .about-content {
-    flex: 100%;
-  }
-
-  .img-container {
-    flex: 100%;
-  }
+  @media (max-width: 760px) {
+    .about-me {
+      flex-wrap: wrap;
+    }
   
-  .testimonial-container {
-    padding: 1rem;
-    flex-direction: column;
-    width: 98%;
-  }
-
-  .fa-quote {
-    visibility: hidden;
-  }
-
-  .testimonial-container .testimonial {
-    width: 95%;
-    padding: 0;
-    margin: auto;
-    font-size: 0.9rem;
-    line-height: 2rem;
-    padding-top: 1rem;
-    order: 1;
-  }
-
-  .user {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    order: 2;
-  }
-
-  .user .user-image {
-    max-width: 20%;
-    height: auto;
-    margin: 1rem;
-  }
+    .about-me .about-text {
+      line-height: 25px;
+      width: 100%;
+    }
   
-  .user .user-details {
-    margin: 0;
-    font-size: 0.8rem;
-    display: flex;
-    flex-direction: column;
-  }
+    .about-content {
+      flex: 100%;
+    }
   
-  .user .role {
-    margin: 0;
-    font-size: 0.8rem;
-    line-height: 15px;
-    padding-top: 0.5rem;
-  }
-
-  .skills-container {
-    flex-wrap: wrap;
-  }
-
-  .skills-box {
-    width: 98%;
-    margin: 1.5rem 0;
-    font-size: 90%;
-  }
-
-  .skills-img {
-    font-size: 1.5rem;
-    padding: 0.5rem;
-  }
-
-  .form-container {
-    padding: 0;
-  }
-
-  .form-group input,
-  .form-group textarea {
-    width: 60%;
-  }
-
-  .btn {
-    width: 90%;
-    margin: auto;
-  }
-
-  .social-icons {
-    margin: auto;
+    .img-container {
+      flex: 100%;
+    }
+    
+    .testimonial-container {
+      padding: 1rem;
+      flex-direction: column;
+      width: 98%;
+    }
+  
+    .fa-quote {
+      visibility: hidden;
+    }
+  
+    .testimonial-container .testimonial {
+      width: 95%;
+      padding: 0;
+      margin: auto;
+      font-size: 0.9rem;
+      line-height: 2rem;
+      padding-top: 1rem;
+      order: 1;
+    }
+  
+    .user {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      order: 2;
+    }
+  
+    .user .user-image {
+      max-width: 20%;
+      height: auto;
+      margin: 1rem;
+    }
+    
+    .user .user-details {
+      margin: 0;
+      font-size: 0.8rem;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .user .role {
+      margin: 0;
+      font-size: 0.8rem;
+      line-height: 15px;
+      padding-top: 0.5rem;
+    }
+  
+    .skills-container {
+      flex-wrap: wrap;
+    }
+  
+    .skills-box,
+    .skills-box:first-of-type {
+      width: 98%;
+      margin: 1.5rem 0;
+      font-size: 90%;
+    }
+  
+    .skills-img {
+      font-size: 1.5rem;
+      padding: 0.5rem;
+    }
+  
+    .form-container {
+      padding: 0;
+    }
+  
+    .form-group input,
+    .form-group textarea {
+      width: 60%;
+    }
+  
+    .btn {
+      width: 90%;
+      margin: auto;
+    }
+  
+    .social-icons {
+      margin: auto;
+    }
   }
 }
