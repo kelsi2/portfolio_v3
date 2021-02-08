@@ -25,27 +25,24 @@ br {
   margin-top: 1rem;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0;
-}
-
 .nav {
   position: fixed;
-  background-color: rgb(130, 189, 216);
+  background-color: #fff;
   top: 0;
   left: 0;
   right: 0;
   transition: all .3s ease-in-out;
   z-index: 2;
   overflow: hidden;
+  box-shadow: var(--box-shadow);
 }
 
 .nav .container {
+  height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: auto;
+  margin: 0;
   transition: all .3s ease-in-out;
   overflow: hidden;
 }
@@ -63,40 +60,20 @@ br {
 }
 
 .nav a {
-  color: #fff;
+  color: var(--main-color);
   text-decoration: none;
   transition: all .3s ease-in-out;
 }
-
-.nav.active {
-  background-color: #fff;
-  box-shadow: var(--box-shadow)
-}
-
-.nav.active a {
-  color: var(--main-color);
-}
-
-.nav.active a.current,
-.nav.active a:hover {
-  font-weight: bold;
-  font-size: 110%;
-}
-
-.nav.active .logo {
-  height: 30%;
-  width: 30%;
-}
-
 .nav a.current,
 .nav a:hover {
   font-size: 110%;
   font-weight: bold;
 }
 
-.logo {
-  height: 50%;
-  width: 50%;
+.logo img {
+  max-height: 60%;
+  max-width: 60%;
+  background-size: contain;
   padding-left: 1rem;
 }
 
@@ -609,7 +586,7 @@ br {
   justify-content: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 790px) {
   .nav .container:only-of-type ul {
     position: absolute;
     display: none;
@@ -695,7 +672,7 @@ br {
   
   .menu-toggle:hover,
   .menu-toggle:focus {
-    color: #02007F;
+    color: var(--main-color);
   }
 
   .logo {

@@ -1,4 +1,3 @@
-const nav = document.querySelector('.nav');
 const container = document.querySelector('.container');
 const menuOpen = document.querySelector('.menu-toggle');
 const menuClose = document.querySelector('.menu-close');
@@ -10,17 +9,6 @@ const username = document.querySelector('.username');
 const role = document.querySelector('.role');
 const leftBtn = document.getElementById('left');
 const rightBtn = document.getElementById('right');
-
-// Change nav on scroll
-window.addEventListener('scroll', fixNav);
-
-function fixNav() {
-  if (window.scrollY > nav.offsetHeight + 150) {
-    nav.classList.add('active');
-  } else {
-    nav.classList.remove('active');
-  };
-};
 
 // Hamburger menu toggle
 menuOpen.addEventListener('click', () => {
