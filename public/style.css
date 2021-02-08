@@ -73,7 +73,6 @@ br {
 .logo img {
   max-height: 60%;
   max-width: 60%;
-  background-size: contain;
   padding-left: 1rem;
 }
 
@@ -424,6 +423,8 @@ br {
 }
 
 .skills-box {
+  display: flex;
+  flex-direction: column;
   margin: 1rem;
   padding: 1rem;
   padding-top: 4rem;
@@ -531,7 +532,6 @@ br {
 }
 
 .btn {
-  margin-left: 5em;
   border: none;
   background-color: var(--main-color);
   color: #fff;
@@ -557,7 +557,6 @@ br {
 }
 
 .social-icons {
-  margin-left: 7em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -673,11 +672,6 @@ br {
   .menu-toggle:hover,
   .menu-toggle:focus {
     color: var(--main-color);
-  }
-
-  .logo {
-    height: 30%;
-    width: 30%;
   }
 
   .section-header {
