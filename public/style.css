@@ -71,8 +71,8 @@ br {
 }
 
 .logo img {
-  max-height: 60%;
-  max-width: 60%;
+  max-height: 40%;
+  max-width: 40%;
   padding-left: 1rem;
 }
 
@@ -425,19 +425,14 @@ br {
 .skills-box {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin: 1rem;
   padding: 1rem;
-  padding-top: 4rem;
   border-radius: 10px;
-  position: relative;
   z-index: 1;
-  text-align: center;
   width: 30%;
   box-shadow: var(--box-shadow)
-}
-
-.skills .skills-box {
-  padding-top: 1rem;
 }
 
 .skills-box h3,
@@ -446,13 +441,14 @@ br {
   font-weight: bold;
   font-size: 150%;
   color: var(--main-color);
+  text-align: center;
 }
 
 .skills-img {
+  align-self: flex-start;
   font-size: 2rem;
   top: 0;
   left: 20px;
-  position: absolute;
   padding: 1rem;
   background-color: var(--main-color);
   color: #fff;
@@ -585,7 +581,7 @@ br {
   justify-content: center;
 }
 
-@media (max-width: 790px) {
+@media (max-width: 992px) {
   .nav .container:only-of-type ul {
     position: absolute;
     display: none;
@@ -611,7 +607,7 @@ br {
       background: #D7015C;
   }
 
-  .container a:only-of-type ul {
+  .container a {
     display: block;
     padding: .75em 15px;
     line-height: 1em;
@@ -679,22 +675,6 @@ br {
     margin-top: 1rem;
   }
 
-  .about-me {
-    flex-wrap: wrap;
-  }
-
-  .about-me .about-text {
-    line-height: 25px;
-  }
-
-  .about-content {
-    flex: 100%;
-  }
-
-  .img-container {
-    flex: 100%;
-  }
-
   .project-container {
     width: 100vw;
   }
@@ -725,6 +705,41 @@ br {
   .project-info a {
     padding: 0.25rem 0.5rem;
     font-size: 80%;
+  }
+
+  .form-group {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .skills-container {
+    flex-wrap: wrap;
+  }
+
+  .skills-box {
+    width: 40%;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-me {
+    flex-wrap: wrap;
+  }
+
+  .about-me .about-text {
+    line-height: 25px;
+  }
+
+  .about-content {
+    flex: 100%;
+  }
+
+  .img-container {
+    flex: 100%;
   }
   
   .testimonial-container {
@@ -783,7 +798,6 @@ br {
   .skills-box {
     width: 98%;
     margin: 1.5rem 0;
-    padding-top: 2.5rem;
     font-size: 90%;
   }
 
@@ -794,13 +808,6 @@ br {
 
   .form-container {
     padding: 0;
-  }
-  
-  .form-group {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 100%;
   }
 
   .form-group input,
