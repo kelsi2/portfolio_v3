@@ -266,6 +266,7 @@ br {
 }
 
 .project-image img {
+  position: absolute;
   box-sizing: border-box;
   position: absolute;
   height: auto;
@@ -299,10 +300,10 @@ br {
 }
 
 .project-info a {
+  margin: 0.5rem;
   border: 5px solid #000;
   color: #000;
-  padding: 0.2rem 0.4rem;
-  font-size: 1.2rem;
+  padding: 0.25rem 1rem 0.25rem 1rem;
   text-decoration: none;
   display: inline-block;
 }
@@ -726,6 +727,10 @@ br {
   }
 
   @media (max-width: 760px) {
+    .logo {
+      max-width: 60%;
+    }
+
     .about-me {
       flex-wrap: wrap;
     }
