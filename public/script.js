@@ -49,7 +49,7 @@ const testimonials = [
   {
     name: 'Al Proulx',
     position: 'President, Scopic Consulting',
-    photo: 'docs/Alain.webp',
+    photo: 'docs/Alain.jpg',
     text: '"Like most people, the idea of designing my company\'s website is intimidating and somewhat overwhelming...Kelsi was able to quickly identified the gaps in my marketing strategies. She created my Web landing page, drawing attention to the investigation services [Scopic Consulting] provides. Kelsi\'s straightforward approach to my landing page development was simple for me to understand and exciting for me to observe Kelsi\'s creative mind at work! The visits to my LinkedIn account and newly created landing page has increased drastically and has generated positive and exciting enquiries into my company services..."'
   }
 ];
