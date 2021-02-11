@@ -5,3 +5,5 @@ package-lock.json
 .env
 
 docs
+
+unused_code.md

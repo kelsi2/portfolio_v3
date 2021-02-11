@@ -334,28 +334,6 @@ br {
   left: 40px;
 }
 
-/* .slide-btn {
-  background-color: transparent;
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 48px;
-  position: absolute;
-  top: 50%;
-  border: none;
-  cursor: pointer;
-}
-
-.slide-btn:hover {
-  color: rgba(255, 255, 255, 1);
-}
-
-.slide-btn:focus {
-  outline: 0;
-}
-
-.slide-btn:active {
-  transform: scale(0.98);
-} */
-
 .fa-angle-right {
   right: 20px;
 }
