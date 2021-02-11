@@ -93,7 +93,7 @@ br {
 }
 
 .hero {
-  background-image: url('./docs/background.jpg');
+  background-image: url('https://sfececkl.sirv.com/Images/kelsidev.net/background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -241,16 +241,6 @@ br {
   margin: auto;
   margin-bottom: 2rem;
   padding: 5rem 0 5rem 0;
-  transform: translateX(400%);
-  transition: transform 0.6s ease;
-}
-
-.project:nth-of-type(even) {
-  transform: translateX(-400%);
-}
-
-.project.show {
-  transform: translateX(0);
 }
 
 .project-image {
@@ -343,7 +333,7 @@ br {
   left: 40px;
 }
 
-.slide-btn {
+/* .slide-btn {
   background-color: transparent;
   color: rgba(255, 255, 255, 0.5);
   font-size: 48px;
@@ -363,7 +353,7 @@ br {
 
 .slide-btn:active {
   transform: scale(0.98);
-}
+} */
 
 .fa-angle-right {
   right: 20px;
