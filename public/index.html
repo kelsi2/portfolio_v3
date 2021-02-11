@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Personal portfolio site for Kelsi Proulx, frontend web developer.">
-  <link rel="icon" type="image/x-icon" href="docs/favicon.ico?v=2">
+  <link rel="icon" type="image/x-icon" href="docs/favicon.ico?v=1">
   <link type="text/css" rel="stylesheet" href="style.css">
   <!-- Google Tag Manager -->
   <script defer>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -19,7 +19,7 @@
 
 <body>
   <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TPT9BWB"
+<noscript defer><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TPT9BWB"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
   <header>
@@ -33,7 +33,7 @@
         <span class="fa fa-bars" aria-hidden="true"></span>
       </button>
       <div class="logo">
-        <a href="#"><img srcset="docs/logo-small.png 1x, docs/logo-medium.png 2x" src="docs/logo-small.png" width="200" height="60" alt="Logo" /></a>
+        <a href="#"><picture><source type="image/webp" srcset="docs/logo.webp" media="(min-width: 701px)"><source type="image/webp" srcset="docs/logo-small.webp" media="(max-width: 700px)"><img srcset="docs/logo-small.png 2x, docs/logo-medium.png 3x" src="docs/logo-small.png" width="200" height="60" alt="Logo" /></picture></a>
       </div>
         <ul>
           <li><a class="link" href="#about">About</a></li>
@@ -72,7 +72,7 @@
       </div>
       
       <div class="img-container">
-        <img srcset="docs/Kelsi-cropped-small.jpg 1x, docs/Kelsi-cropped-medium.jpg 2x" src="docs/Kelsi-cropped-medium.jpg" height="280" width="280" alt="Kelsi" />
+        <picture><source type="image/webp" srcset="docs/Kelsi-cropped.webp" media="(min-width: 701px)" ><source type="image/webp" srcset="docs/Kelsi-cropped-small.webp" media="(max-width: 700px)" ><img srcset="docs/Kelsi-cropped-small.jpg 1x, docs/Kelsi-cropped-medium.jpg 2x" src="docs/Kelsi-cropped-medium.jpg" height="280" width="280" alt="Kelsi" /></picture>
         <a target="_blank" rel="noopener" href="https://www.canva.com/design/DAEJnLHujCI/wV0L8kC5n7qxN7V9iabLyw/view?utm_content=DAEJnLHujCI&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" class="resume-link">Printable Resume</a>
       </div>
     </section>
@@ -83,7 +83,7 @@
       <div class="project-container">
         <div class="project">
           <div class="project-image">
-            <img src="docs/results-small.jpg" alt="Shoppies awards search" />
+            <picture><source type="image/webp" srcset="docs/results.webp" media="(min-width: 701px)" ><source type="image/webp" srcset="docs/results-small.webp" media="(max-width: 700px)" ><img src="docs/results-small.jpg" alt="Shoppies awards search" height="175" width="320" /></picture>
           </div>
           <div class="project-info">
             <h3>Shoppies</h3>
@@ -97,7 +97,7 @@
 
         <div class="project">
           <div class="project-image">
-            <img src="docs/respectful-workplace-small.jpg" alt="Respectful workplace landing page" />
+            <picture><source type="image/webp" srcset="docs/respectful-workplace.webp" media="(min-width:701px)" ><source type="image/webp" srcset="docs/respectful-workplace-small.webp" media="(max-width:700px)" ><img src="docs/respectful-workplace-small.jpg" alt="Respectful workplace landing page" height="175" width="320" /></picture>
         </div>
         <div class="project-info">
           <h3>Respectful Workplace Course - Landing Page</h3>
@@ -110,7 +110,7 @@
 
         <div class="project">
           <div class="project-image">
-            <img src="docs/letsplayjeopardy-small.jpg" alt="Jeopardy homepage" />
+            <picture><source type="image/webp" srcset="docs/letsplayjeopardy.webp" media="(min-width: 701px)" ><source type="image/webp" srcset="docs/letsplayjeopardy-small.webp" media="(max-width: 700px)" ><img src="docs/letsplayjeopardy-small.jpg" alt="Jeopardy homepage" height="175" width="320" /></picture>
         </div>
         <div class="project-info">
           <h3>Jeopardy</h3>
@@ -124,7 +124,7 @@
 
         <div class="project">
           <div class="project-image">
-            <img src="docs/forkItAllHome-small.jpg" alt="Fork It All homepage" />
+            <picture><source type="image/webp" srcset="docs/forkItAllHome.webp" media="(min-width: 701px)" ><source type="image/webp" srcset="docs/forkItAllHome-small.webp" media="(max-width: 700px)" ><img src="docs/forkItAllHome-small.jpg" alt="Fork It All homepage" height="175" width="320" /></picture>
           </div>
           <div class="project-info">
             <h3>Fork It All</h3>
@@ -142,7 +142,7 @@
 
         <div class="project">
           <div class="project-image">
-            <img src="docs/Products_page-small.jpg" alt="Jungle products page" />
+            <picture><source type="image/webp" srcset="docs/Products_page.webp" media="(min-width: 701px)" ><source type="image/webp" srcset="docs/Products_page-small.webp" media="(max-width: 700px)" ><img src="docs/Products_page-small.jpg" alt="Jungle products page" height="175" width="320" /></picture>
           </div>
           <div class="project-info">  
             <h3>Jungle</h3>
@@ -159,7 +159,7 @@
 
         <div class="project">     
           <div class="project-image">
-            <img src="docs/scheduler-small.jpg" alt="Scheduler" />
+            <picture><source type="image/webp" srcset="docs/scheduler.webp" media="(min-width: 701px)" ><source type="image/webp" srcset="docs/scheduler-small.webp" media="(max-width: 700px)" ><img src="docs/scheduler-small.jpg" alt="Scheduler" height="175" width="320" /></picture>
           </div>
           <div class="project-info">
             <h3>Scheduler</h3>
@@ -177,7 +177,7 @@
 
           <div class="project">
             <div class="project-image">
-              <img src="docs/decisionMakerHome-small.jpg" alt="Decision Maker homepage" />
+              <picture><source type="image/webp" srcset="docs/decisionMakerHome.webp" media="(min-width: 701px)" ><source type="image/webp" srcset="docs/decisionMakerHome-small.webp" media="(max-width: 700px)" ><img src="docs/decisionMakerHome-small.jpg" alt="Decision Maker homepage" height="175" width="320" /></picture>
             </div>
             <div class="project-info">
               <h3>Decision Maker</h3>
@@ -245,7 +245,7 @@
         <!-- <button id="right" class="fas fa-angle-right slide-btn"></button>
         <button id="left" class="fas fa-angle-left slide-btn"></button>-->
         <div class="user"> 
-          <img class="user-image" srcset="docs/Alain-small.jpg 1x, docs/Alain-medium.jpg 2x, docs/Alain-medium.jpg 3x" src="docs/Alain-medium.jpg" height="400" width="400" alt="user" />
+          <picture><source type="image/webp" srcset="docs/Alain.webp" media="(min-width: 701px)" ><source type="image/webp" srcset="docs/Alain-small.webp" media="(max-width: 700px)" ><img class="user-image" srcset="docs/Alain-small.jpg 1x, docs/Alain-medium.jpg 2x, docs/Alain-medium.jpg 3x" src="docs/Alain-medium.jpg" height="400" width="400" alt="user" /></picture>
           <div class="user-details">
             <h4 class="username">Al Proulx</h4>
             <p class="role">President, Scopic Consulting</p>
@@ -392,8 +392,8 @@
 </main>
 
 <footer>
-  <div class="footer-logo">
-    <a href="#"><img srcset="docs/logo-small.png 1x, docs/logo-medium.png 2x" src="docs/logo-medium.png" width="380" height="162" alt="Logo" /></a>
+  <div>
+    <a href="#"><picture class="footer-logo"><source type="image/webp" srcset="docs/logo.webp" media="(min-width: 701px)" ><source type="image/webp" srcset="docs/logo-small.webp" media="(max-width: 700px)" ><img srcset="docs/logo-small.png 1x, docs/logo-medium.png 2x" src="docs/logo-medium.png" width="380" height="162" alt="Logo" /></picture></a>
   </div>
   <div class="social-icons">
     <a class="social-icon" href="https://www.linkedin.com/in/kelsi-dev/" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>

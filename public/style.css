@@ -94,7 +94,7 @@ br {
 }
 
 .hero {
-  background-image: url('docs/background-medium.jpg');
+  background-image: url('docs/background.webp');
   background-image: -webkit-image-set(url('docs/background-small.jpg') 1x, url('docs/background-medium.jpg') 2x, url('docs/background-large.jpg') 3x);
   background-image: image-set(url('docs/background-small.jpg') 1x, url('docs/background-medium.jpg') 2x, url('docs/background-large.jpg') 3x);
   background-repeat: no-repeat;
@@ -257,10 +257,9 @@ br {
   margin: auto;
 }
 
-.project-image img {
-  position: absolute;
+.project-image img,
+.project-image source {
   box-sizing: border-box;
-  position: absolute;
   height: auto;
   width: 100%;
 }
@@ -673,12 +672,7 @@ footer {
 
   .project {
     flex-direction: column;
-    padding: 0.5rem;
-    transform: translateX(0);
-  }
-
-  .project:nth-of-type(even) {
-    transform: translateX(0);
+    padding: 0.1rem;
   }
 
   .project-info {
@@ -738,6 +732,10 @@ footer {
       max-width: 60%;
     }
 
+    .hero {
+      background-image: url('docs/background-small.webp');
+    }
+
     .about-me {
       flex-wrap: wrap;
     }
@@ -784,8 +782,9 @@ footer {
       order: 2;
     }
   
-    .user .user-image {
-      max-width: 20%;
+    .user .user-image,
+    .user source {
+      max-width: 30%;
       height: auto;
       margin: 1rem;
     }
@@ -795,6 +794,7 @@ footer {
       font-size: 0.8rem;
       display: flex;
       flex-direction: column;
+      width: 100%
     }
     
     .user .role {
