@@ -2,13 +2,13 @@ const container = document.querySelector('.container');
 const menuOpen = document.querySelector('.menu-toggle');
 const menuClose = document.querySelector('.menu-close');
 const links = document.querySelectorAll('.link');
-const testimonialContainer = document.querySelector('.testimonial-container');
-const testimonial = document.querySelector('.testimonial');
-const userImage = document.querySelector('.user-image');
-const username = document.querySelector('.username');
-const role = document.querySelector('.role');
-const leftBtn = document.getElementById('left');
-const rightBtn = document.getElementById('right');
+// const testimonialContainer = document.querySelector('.testimonial-container');
+// const testimonial = document.querySelector('.testimonial');
+// const userImage = document.querySelector('.user-image');
+// const username = document.querySelector('.username');
+// const role = document.querySelector('.role');
+// const leftBtn = document.getElementById('left');
+// const rightBtn = document.getElementById('right');
 
 // Hamburger menu toggle
 menuOpen.addEventListener('click', () => {
