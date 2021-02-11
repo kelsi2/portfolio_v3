@@ -94,9 +94,9 @@ br {
 }
 
 .hero {
-  background-image: url('docs/background.webp');
-  background-image: -webkit-image-set(url('docs/background-small.jpg') 1x, url('docs/background-medium.jpg') 2x, url('docs/background-large.jpg') 3x);
-  background-image: image-set(url('docs/background-small.jpg') 1x, url('docs/background-medium.jpg') 2x, url('docs/background-large.jpg') 3x);
+  background-image: url('docs/background.jpg');
+  background-image: -webkit-image-set(url('docs/background-small.webp') 1x, url('docs/background.webp') 2x);
+  background-image: image-set(url('docs/background-small.webp') 1x, url('docs/background.webp') 2x);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -246,11 +246,10 @@ br {
 }
 
 .project-image {
-  position: relative;
   overflow: hidden;
   max-width: 100%;
   width: 35rem;
-  height: 20rem;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -260,8 +259,9 @@ br {
 .project-image img,
 .project-image source {
   box-sizing: border-box;
-  height: auto;
+  height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 
 .project-info {
