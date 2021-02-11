@@ -73,8 +73,7 @@ br {
 }
 
 .logo img {
-  max-height: 40%;
-  max-width: 40%;
+  max-width: 80%;
   padding-left: 1rem;
 }
 
@@ -95,7 +94,9 @@ br {
 }
 
 .hero {
-  background-image: url('https://sfececkl.sirv.com/Images/kelsidev.net/background.jpg');
+  background-image: url('docs/background-medium.jpg');
+  background-image: -webkit-image-set(url('docs/background-small.jpg') 1x, url('docs/background-medium.jpg') 2x, url('docs/background-large.jpg') 3x);
+  background-image: image-set(url('docs/background-small.jpg') 1x, url('docs/background-medium.jpg') 2x, url('docs/background-large.jpg') 3x);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
