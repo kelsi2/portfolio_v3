@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/kelsi2/portfolio_v3#readme",
   "dependencies": {
+    "dejavu-sans": "^1.0.0",
     "sharp": "^0.27.1"
   }
 }

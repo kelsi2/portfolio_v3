@@ -131,7 +131,7 @@ br {
 }
 
 .hero h1 {
-  font-family: var(--header-font);
+  font-family: var(--header-font), 'DejaVu Sans';
   font-weight: 900;
   font-size: 5em;
   margin: -20px 0 20px;
@@ -139,7 +139,7 @@ br {
 }
 
 .hero h2 {
-  font-family: var(--header-font);
+  font-family: var(--header-font), 'DejaVu Sans';
   font-weight: 400;
   font-size: 2rem;
   letter-spacing: 3px;
@@ -148,7 +148,7 @@ br {
 .section-header {
   display: flex;
   justify-content: center;
-  font-family: var(--header-font);
+  font-family: var(--header-font), 'DejaVu Sans';
   font-weight: 400;
   font-size: 3em;
   color: var(--main-color);
