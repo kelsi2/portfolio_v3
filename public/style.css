@@ -305,6 +305,31 @@ br {
   color: #fff;
 }
 
+.project-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  margin: auto;
+  font-size: 1.5rem;
+}
+
+.project-button:hover {
+  font-size: 1.6rem;
+}
+
+.fa-arrow-right {
+  margin-left: 0.5rem;
+}
+
+.fa-arrow-left {
+  margin-right: 0.5rem;
+}
+
+.projects-page {
+  padding-bottom: 2rem;
+}
+
 .testimonial-container {
   background-color: var(--main-color);
   color: #fff;
