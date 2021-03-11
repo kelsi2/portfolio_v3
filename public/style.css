@@ -328,6 +328,7 @@ br {
 
 .projects-page {
   padding-bottom: 2rem;
+  padding-top: 2rem;
 }
 
 .testimonial-container {
@@ -756,7 +757,8 @@ footer {
 
   @media (max-width: 760px) {
     .logo {
-      max-width: 60%;
+      max-width: 50%;
+      max-height: 80%;
     }
 
     .hero {
@@ -778,6 +780,10 @@ footer {
   
     .img-container {
       flex: 100%;
+    }
+
+    .project-button {
+      width: 80%;
     }
     
     .testimonial-container {
