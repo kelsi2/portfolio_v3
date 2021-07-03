@@ -456,7 +456,7 @@ br {
   padding: 0.5rem;
 }
 
-.front-end-skills {
+.front-end-skills, .back-end-skills {
   columns: 2;
 }
 

@@ -5,3 +5,5 @@ package-lock.json
 unused_code.md
 
 sharp.js
+
+.DS_Store
