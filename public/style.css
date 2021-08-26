@@ -95,8 +95,6 @@ br {
 
 .hero {
   background-image: url('docs/background.jpg');
-  background-image: -webkit-image-set(url('docs/background-small.webp') 1x, url('docs/background.webp') 2x);
-  background-image: image-set(url('docs/background-small.webp') 1x, url('docs/background.webp') 2x);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
