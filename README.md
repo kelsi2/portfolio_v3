@@ -6,4 +6,4 @@ I learned a lot building this project, including using image source-sets and bet
 
 ![Landing page](public/docs/home.png)
 
-<b>✨ Check out the live version at [kelsidev.net](https://kelsidev.net)!</b>
+<b>✨ Check out the live version at [kelsidev.tech](https://kelsidev.tech)!</b>
